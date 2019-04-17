@@ -26,7 +26,14 @@
 >
 > ##### 1. 블록만
 >
-> <button *class*=”btn”></button>
+> ```
+> ​```
+> <button class=”btn”></button>
+> <style>
+> .btn {}
+> </style> 
+> ​```
+> ```
 >
 > <style>
 > .btn {}
