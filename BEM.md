@@ -18,12 +18,11 @@
 2. 요소 : 구성 요소 내부는 요소라는 하나 이상의 자식이 될 수 있다.
 3. 수정자(modifier) : 블록이나 요소가 수식으로 표현된 변형을 가질 수 있다.
 
-> 세 가지 모두 사용되면 [block]__[element]--[modifier] 이런 식으로 보인다.
->
-> -------------
->
-> ### 예제
->
+세 가지 모두 사용되면 [block]__[element]--[modifier] 이런 식으로 보인다.
+
+-------------
+
+### 예제
 
 ##### 1. 블록만
 
@@ -96,28 +95,28 @@ color: green;
 
 > 
 >
-> photo 아래 photo_ _caption 아래 photo _ _quote 지만,  `photo__caption__quote`라고 쓰지않고, `photo__quote`라고 표현한다.
->
-> 구성 요소의 단일 요소를 변경하려고 하는 경우가 있는데, 이 때는 요소에 수정자를 추가하는 것이 더 유용하다.
->
-> 
->
-> ```
-> <figure class="photo">
-> <img class="photo__img photo__img--framed" src="me.jpg">
-> <figcaption class="photo__caption photo__caption--large">Look at me!</figcaption>
-> </figure>
-> 
-> <style>
-> .photo__img--framed {
->  /* incremental style changes */
-> }
-> .photo__caption--large {
->  /* incremental style changes */
-> }
-> </style>
-> 
-> ```
+> > photo 아래 photo_ _caption 아래 photo _ _quote 지만,  `photo__caption__quote`라고 쓰지않고, `photo__quote`라고 표현한다.
+> >
+> > 구성 요소의 단일 요소를 변경하려고 하는 경우가 있는데, 이 때는 요소에 수정자를 추가하는 것이 더 유용하다.
+> >
+> > 
+> >
+> > ```
+> > <figure class="photo">
+> > <img class="photo__img photo__img--framed" src="me.jpg">
+> > <figcaption class="photo__caption photo__caption--large">Look at me!</figcaption>
+> > </figure>
+> > 
+> > <style>
+> > .photo__img--framed {
+> >  /* incremental style changes */
+> > }
+> > .photo__caption--large {
+> >  /* incremental style changes */
+> > }
+> > </style>
+> > 
+> > ```
 
 ----------
 
