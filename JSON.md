@@ -152,7 +152,7 @@ minLength와 maxLength 키워드를 사용하여 해당 문자열의 길이가 �
 
 
 
-**정규표현식(regular expression)검증 **
+**정규표현식(regular expression)검증**
 
 pattern 키워드를 사용하여 해당 문자열이 명시된 정규 표현식과 일치하는지를 검사할 수 있다.
 
