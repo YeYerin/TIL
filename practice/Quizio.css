@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* 보라색배경 */
+#back {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 110%;
+    height: 200px;
+    background-color: #5C69F3;
+    border-radius: 30% 30% 0% 0%;
+}
+
+/* 로고부분 */
+.header {
+    position: relative;
+    top: 140px;
+    height: 180px;
+}
+
+#logo {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 70px;
+    color: #5C69F3;
+}
+
+/* 버튼 */
+#btn1, #btn2 {
+    position: relative;
+    top: 260px;
+    left: 23%;
+    width: 200px;
+    height: 55px;
+    background-color: #FC80B1;
+}
+
+#btn2 {
+    top: 315px;
+    background-color: #5C69F3;
+    border: 2px solid white;
+}
+
+#btn1::before, #btn1::after {
+    content:"";
+    position: absolute;
+    left: -25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FC80B1;
+}
+
+#btn1::after {
+    left: 175px;
+}
+
+/* 버튼-글자 */
+#btn1 p, #btn2 p {
+    position: absolute;
+    top: 13px;
+    left: 35%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#btn2 p {
+    position: relative;
+    left: 0;
+}
