@@ -9,10 +9,10 @@ body {
 /* 보라색배경 */
 #back {
     position: absolute;
-    bottom: -50px;
-    left: -20px;
+    bottom: 0;
+    left: -25px;
     width: 115%;
-    height: 250px;
+    height: 210px;
     background-color: #5C69F3;
     border-radius: 30% 30% 0% 0%;
 }
