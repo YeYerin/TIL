@@ -9,10 +9,10 @@ body {
 /* 보라색배경 */
 #back {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     left: -20px;
-    width: 110%;
-    height: 200px;
+    width: 115%;
+    height: 250px;
     background-color: #5C69F3;
     border-radius: 30% 30% 0% 0%;
 }
@@ -59,14 +59,38 @@ body {
     height: 55px;
     border-radius: 50%;
     background-color: #FC80B1;
+    
 }
 
 #btn1::after {
     left: 175px;
 }
 
+#btn2 p::before, #btn2 p::after {
+    content:"";
+    position: absolute;
+    top: -15px;
+    left: -85px;
+    width: 130px;
+    height: 55px;
+    border-radius: 27.5px 0px 0px 27.5px;
+    background-color: #5C69F3;
+    border: 2px solid white;
+}
+
+#btn2 p::after {
+    border-radius:  0px 27.5px 27.5px 0px  ;
+    left: 40px;
+}
+
+#btn1, #btn1::before, #btn1::after {
+    box-shadow: 0px 0px 10px 0px #FC80B1;
+}
+
+
+
 /* 버튼-글자 */
-#btn1 p, #btn2 p {
+#btn1 p, #btn2 p, #p1{
     position: absolute;
     top: 13px;
     left: 35%;
@@ -76,6 +100,15 @@ body {
 }
 
 #btn2 p {
-    position: relative;
-    left: 0;
+    left: 60px;
+}
+
+#p1 {
+    top: 0;
+    left: 58px;
+    width: 90px;
+    height: 40px;
+    padding-top: 15px;
+    background-color: #5C69F3;
+    z-index: 1;
 }
