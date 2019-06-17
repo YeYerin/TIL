@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>예린이의 계산기</title>
+
+    <style>
+        table {
+            border: solid;
+            border-collapse: collapse;
+
+        }
+
+        td {
+            width: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            border: solid;
+        }
+
+        input {
+            border: none;
+            text-align: right;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+    <script>
+        
+        function add(char) {
+            let display = document.getElementById('display');   //input을 불러오기 //getElementById -> input 태그
+            display.value += char; //input 태그의 값에 char 값을 가져와서 추가하기 //.value -> input 태그 값
+        }
+
+        //'='에 연결
+        function calculator() { 
+            let display = document.getElementById('display');   
+            let result = eval(display.value);   //display에 있는 식을 계산하고 저장하기 //eval함수 -> 식 계산
+            document.getElementById('result').value = result; //result 값(.value)에 계산한 값 넣기
+        }
+
+        //'AC'에 연결
+        function reset() {
+            document.getElementById('display').value = "";  //clearInterval() 함수 쓰면 undefined
+            document.getElementById('result').value = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="display">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" onclick="reset()">AC</td>
+            <td onclick="add('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="add(7)">7</td>
+            <td onclick="add(8)">8</td>
+            <td onclick="add(9)">9</td>
+            <td onclick="add('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td onclick="add('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td onclick="add('+')">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="add(0)">0</td>
+            <td onclick="add('.')">.</td>
+            <td onclick="calculator()">=</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
