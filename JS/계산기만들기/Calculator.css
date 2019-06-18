@@ -1,0 +1,52 @@
+
+table {
+    border: 2px solid #939393;
+    border-collapse: collapse;
+}
+
+
+/* 
+input display랑 result 크기 다르게 
+*/
+
+
+
+.abc {
+    background-color: #F5933C;
+    color: #FEF9F4;
+}
+
+#AC {
+    background-color: #D7D7D7;
+}
+
+#result {
+    height: 10px;
+}
+
+td {
+    width: 5px;
+    padding: 5px 7px;
+    text-align: center;
+    border: 1px solid #939393;
+}
+
+#input {
+    background-color: #4B4B4B;
+    border: none;
+}
+
+input {
+    background: none;
+    border: none;
+    color: #D2CEC1;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}
+
+#zero {
+    text-align: left;
+}
