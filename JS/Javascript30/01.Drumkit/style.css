@@ -26,7 +26,7 @@ html {
     padding: 10px 15px;
     margin: 10px;
     border: 4px solid black;
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 15px;
     text-align: center;
     background-color:rgb(143, 143, 143);
@@ -43,3 +43,9 @@ kbd {
     color: rgb(255, 222, 75);
     text-shadow: 0 0 5px black;
 }
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
